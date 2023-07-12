@@ -20,7 +20,7 @@ export default function Page() {
                     <a className={styles.subtitle}>تطبيق عربي لمشاهدة أفلام ومسلسلات الأنمي المترجمة</a>
                     <a className={styles.subtitle}>مجاناً وبدون إعلانات متوفر على أندرويد والويب</a>
                     <a className={styles.note}>غير متوفر على اجهزة الأيفون حاليا (يمكنك استخدام نسخة المتصفح)</a>
-                    <AndroidDownload url=""/>
+                    <AndroidDownload url="/download/app.apk"/>
                 </div>
             </div>
         </div>

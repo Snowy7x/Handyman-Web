@@ -26,8 +26,8 @@ const Button: FC<ButtonProps> = ({
   className,
 }) => {
   return (
-    <div
-      onClick={() => url && window.open(url, "_blank")}
+    <a
+      href={url}
       style={{
         height: "fit-content",
         width: width,
@@ -40,7 +40,7 @@ const Button: FC<ButtonProps> = ({
         <span className="button-title">{title}</span>
         <span className="button-store-name">{storeName}</span>
       </div>
-    </div>
+    </a>
   );
 };
 
