@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --navbar-height: 80px;
+  --navbar-padding: 1rem;
+
+  --background-color: #0f0f13;
+
+  --primary: #dc3434;
+  --secondary: #f2f2f2;
+
+  --text-primary: #000;
+  --text-secondary: #fff;
+
+  --border-primary: #000;
+  --border-secondary: #fff;
+
+  --button-primary: #fff;
+  --button-secondary: #000;
+
+  /** FONT SIZES */
+  --font-size-xxl: 3rem;
+  --font-size-xl: 2.5rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.7rem;
+  --font-size-sm: 1.3rem;
+  --font-size-xs: 1.2rem;
+
+  --font-size-hero-title: 4rem;
+
+  --hero-selecotor-item-width: 320px;
+  --hero-selecotor-item-height: 200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--background-start-rgb)) 0%,
+    rgb(var(--background-end-rgb)) 100%
+  );
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: calc(var(--navbar-height) * -1);
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  :root {
+
+    /* Font sizes */
+    --font-size-xxl: 2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-lg: 1.2rem;
+    --font-size-md: 1.1rem;
+    --font-size-sm: 1rem;
+    --font-size-xs: 0.8rem;
+  }
+}

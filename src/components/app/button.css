@@ -1,0 +1,46 @@
+
+:root {
+  --primary-color: #202020;
+  --secondary-color: #fff;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.button-container-dark {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.button-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Outfit", sans-serif;
+}
+
+.button-store-name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.button-title {
+  font-size: 12px;
+}
+
+.button-container svg {
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}

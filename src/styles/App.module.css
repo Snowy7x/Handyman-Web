@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.container:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+    background-image: url('https://images4.alphacoders.com/131/1314707.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* darken the image */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.textContent {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imageContent {
+    z-index: 1;
+    width: 20%;
+    height: 80%;
+}
+
+.imageContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.title {
+    font-size: var(--font-size-hero-title);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px var(--primary);
+}
+
+.subtitle {
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px var(--primary);
+}
+
+.note {
+    font-size: var(--font-size-xs);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: rgb(255, 229, 86);
+}
+
+
+@media screen and (max-width: 880px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .textContent {
+        margin-bottom: 5rem;
+    }
+
+    .imageContent {
+        margin-top: 5rem;
+        width: 70%;
+        height: 50%;
+    }
+
+}
+
