@@ -27,7 +27,7 @@
     padding-top: 100px;
     top: 0;
     right: -40vw;
-    width: 30vw;
+    width: 50vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.95);
 
@@ -54,13 +54,13 @@
     }
 
     100% {
-        right: -40vw;
+        right: -50vw;
     }
 }
 
 @keyframes slideIn {
     0% {
-        right: -40vw;
+        right: -50vw;
     }
 
     100% {
@@ -91,6 +91,10 @@
     margin-left: 0.5rem;
 }
 
+.navbar__mobileLogo {
+    margin-bottom: 3rem;
+}
+
 .navbar__list {
     display: flex;
     list-style: none;
@@ -110,13 +114,47 @@
     font-size: var(--font-size-sm);
 }
 
-.navbar__listItem {
+.navbar__mobileList a {
+    color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+.navbar__listRedBtn {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 1rem;
+
+    border-radius: 50px;
+
+    background-color: #fd4747;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.navbar__listItem {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
     font-weight: 500;
 }
+
+.navbar__mobileListItem {
+    margin-left: 1rem;
+    padding: 0.1rem 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar__mobileListItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
 
 .navbar__listItem:hover {
     background-color: rgba(255, 255, 255, 0.1);

@@ -1,0 +1,205 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container:before {
+    content: "";
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+
+    background-image: url('https://scontent.fdoh9-1.fna.fbcdn.net/v/t39.30808-6/308418045_481275514013736_2456842695685896721_n.jpg?stp=dst-jpg_p960x960&_nc_cat=105&ccb=1-7&_nc_sid=52f669&_nc_ohc=E-z4kwoSC3IAX-MzCRr&_nc_ht=scontent.fdoh9-1.fna&oh=00_AfAN2Cpw65V-f1wX0UI601bvurRBW7G3fGTmePGKDLhOQQ&oe=65095EC2');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* darken the image */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.panel {
+    background-color: rgba(0, 0, 0, 0.74);
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 40px;
+}
+
+.title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputContainer label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.inputContainer input {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out;
+    color: #000;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.inputContainer input::placeholder {
+    color: #999;
+}
+
+.btn {
+    background-color: #ff4747;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalTitle {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modalText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modalBtnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.modalBtn {
+    background-color: #ff4747;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+}
+
+.modalBtn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 880px) {
+
+    .panel {
+        width: 90%;
+    }
+
+}

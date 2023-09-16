@@ -48,13 +48,13 @@ export default function Hero({animes} : HeroProps) {
             }
         }, 20);
 
-        // Set new anime
+        // Set new policy
         setAnime(newAnime as HeroAnime);
 
     }
 
     useEffect(() => {
-        // Auto change anime every 5 seconds
+        // Auto change policy every 5 seconds
         const interval = setInterval(() => {
             let index = animes.indexOf(anime);
             if (index === animes.length - 1) index = -1;

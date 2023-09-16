@@ -36,99 +36,27 @@ export default function Navbar() {
             </a>
 
             <div className={styles.navbar__content}>
-                <div className={styles.navbar__logo}>
-                    <h1><span>Sn</span>Anime</h1>
-                </div>
+                <a className={styles.navbar__logo} href={"/"}>
+                    <h1><span>HandyMan</span>App</h1>
+                </a>
 
                 <div className={styles.navbar__list}>
-                    <a className={styles.navbar__listItem} href="#">Top Animes</a>
-                    <a className={styles.navbar__listItem} href="#">Anime List</a>
-                    <a className={styles.navbar__listItem} href="#">My List</a>
-                    <a className={styles.navbar__listItem} href="#">Manga</a>
+                    <a className={styles.navbar__listItem} href="/policy">Privacy & Policy</a>
                 </div>
 
                 <div className={[styles.navbar__list, styles.search_login].join(" ")}>
                     {/* Search bar section */}
-                    <div className={styles.navbar__search}>
-                        <input className={styles.navbar__searchInput} type="text" placeholder="Search..."/>
-                        {/* Search results */}
-                        <div className={styles.navbar__searchResults}>
-                            <div className={styles.navbar__searchResult}>
-                                <img className={styles.navbar__searchResultImage}
-                                     src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                     alt="Anime Image"/>
-                                <div className={styles.navbar__searchResultInfo}>
-                                    <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                                </div>
-                            </div>
-
-                            <div className={styles.navbar__searchResult}>
-                                <img className={styles.navbar__searchResultImage}
-                                     src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                     alt="Anime Image"/>
-                                <div className={styles.navbar__searchResultInfo}>
-                                    <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                                </div>
-                            </div>
-                            <div className={styles.navbar__searchResult}>
-                                <img className={styles.navbar__searchResultImage}
-                                     src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                     alt="Anime Image"/>
-                                <div className={styles.navbar__searchResultInfo}>
-                                    <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a className={styles.navbar__listItem} href="#">Login</a>
-                    <a className={styles.navbar__listItem} href="#">Sign Up</a>
+                    <a className={styles.navbar__listRedBtn} href="/delete">Delete Your Account</a>
                 </div>
             </div>
 
             <div className={styles.navbar__mobile}>
-                <div className={styles.navbar__mobileLogo}>
+                <a className={styles.navbar__mobileLogo} href={"/"}>
                     <h1><span>Sn</span>Anime</h1>
-                </div>
-                <div className={styles.navbar__search}>
-                    <input className={styles.navbar__searchInput} type="text" placeholder="Search..."/>
-                    {/* Search results */}
-                    <div className={styles.navbar__searchResults}>
-                        <div className={styles.navbar__searchResult}>
-                            <img className={styles.navbar__searchResultImage}
-                                 src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                 alt="Anime Image"/>
-                            <div className={styles.navbar__searchResultInfo}>
-                                <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                            </div>
-                        </div>
-
-                        <div className={styles.navbar__searchResult}>
-                            <img className={styles.navbar__searchResultImage}
-                                 src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                 alt="Anime Image"/>
-                            <div className={styles.navbar__searchResultInfo}>
-                                <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                            </div>
-                        </div>
-                        <div className={styles.navbar__searchResult}>
-                            <img className={styles.navbar__searchResultImage}
-                                 src="https://cdn.myanimelist.net/images/anime/5/87048.jpg?s=4c9f0b7b4b2b2b2b2b2b2b2b2b2b2b2"
-                                 alt="Anime Image"/>
-                            <div className={styles.navbar__searchResultInfo}>
-                                <h3 className={styles.navbar__searchResultTitle}>Anime Title</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
                 <div className={styles.navbar__mobileList}>
-                    <a className={styles.navbar__mobileListItem} href="#">Top Animes</a>
-                    <a className={styles.navbar__mobileListItem} href="#">Anime List</a>
-                    <a className={styles.navbar__mobileListItem} href="#">My List</a>
-                    <a className={styles.navbar__mobileListItem} href="#">Manga</a>
-                    <a className={styles.navbar__mobileListItem} href="#">Login</a>
-                    <a className={styles.navbar__mobileListItem} href="#">Sign Up</a>
+                    <a className={styles.navbar__mobileListItem} href="/policy">Privacy & Policy</a>
+                    <a className={styles.navbar__mobileListItem} href="/delete">Delete Your Account</a>
                 </div>
             </div>
         </div>

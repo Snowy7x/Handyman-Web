@@ -1,4 +1,4 @@
-.container {
+.policy_container, .container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,9 +8,29 @@
     color: white;
 }
 
-.container:before {
+.policy_container {
+    padding: 5rem 5rem 0 5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.policy_container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.policy_container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.policy_container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+.policy_container, .container:before {
     content: "";
-    display: block;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +38,7 @@
     height: 100%;
     z-index: -10;
 
-    background-image: url('https://images4.alphacoders.com/131/1314707.jpg');
+    background-image: url('https://scontent.fdoh9-1.fna.fbcdn.net/v/t39.30808-6/308418045_481275514013736_2456842695685896721_n.jpg?stp=dst-jpg_p960x960&_nc_cat=105&ccb=1-7&_nc_sid=52f669&_nc_ohc=E-z4kwoSC3IAX-MzCRr&_nc_ht=scontent.fdoh9-1.fna&oh=00_AfAN2Cpw65V-f1wX0UI601bvurRBW7G3fGTmePGKDLhOQQ&oe=65095EC2');
 
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +49,7 @@
 
     /* darken the image */
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .overlay {
@@ -69,6 +89,27 @@
     text-shadow: 0 0 20px var(--primary);
 }
 
+.policy_title {
+    font-size: var(--font-size-hero-title);
+    font-weight: 700;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.policy_subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.policy_paragraph {
+    font-size: var(--font-size-sm);
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+
+
 .subtitle {
     font-size: var(--font-size-md);
     font-weight: 400;
@@ -102,6 +143,10 @@
         margin-top: 5rem;
         width: 70%;
         height: 50%;
+    }
+
+    .policy_container {
+        padding: 5rem 1rem 0 1rem;
     }
 
 }
