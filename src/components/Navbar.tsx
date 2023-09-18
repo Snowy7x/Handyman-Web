@@ -52,7 +52,7 @@ export default function Navbar() {
 
             <div className={styles.navbar__mobile}>
                 <a className={styles.navbar__mobileLogo} href={"/"}>
-                    <h1><span>Sn</span>Anime</h1>
+                    <h1><span>HandyMan</span>App</h1>
                 </a>
                 <div className={styles.navbar__mobileList}>
                     <a className={styles.navbar__mobileListItem} href="/policy">Privacy & Policy</a>
